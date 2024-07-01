@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
-import { CircleUser, Menu, Home } from "lucide-react";
+import { CircleUser, Menu, Home, Info } from "lucide-react";
 import { NavLink, Outlet } from "react-router-dom";
 import { navItems } from "../App";
 
@@ -27,6 +27,19 @@ const Layout = () => {
     </div>
   );
 };
+
+const navItems = [
+  {
+    title: "Home",
+    to: "/",
+    icon: <Home className="h-4 w-4" />,
+  },
+  {
+    title: "About",
+    to: "/about",
+    icon: <Info className="h-4 w-4" />,
+  },
+];
 
 const DesktopNav = () => (
   <nav className="hidden md:flex md:items-center md:gap-5 lg:gap-6 text-lg font-medium md:text-sm">
