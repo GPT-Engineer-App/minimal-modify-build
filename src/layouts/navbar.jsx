@@ -28,19 +28,6 @@ const Layout = () => {
   );
 };
 
-const navItems = [
-  {
-    title: "Home",
-    to: "/",
-    icon: <Home className="h-4 w-4" />,
-  },
-  {
-    title: "About",
-    to: "/about",
-    icon: <Info className="h-4 w-4" />,
-  },
-];
-
 const DesktopNav = () => (
   <nav className="hidden md:flex md:items-center md:gap-5 lg:gap-6 text-lg font-medium md:text-sm">
     <NavItem
